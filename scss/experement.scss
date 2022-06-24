@@ -1,0 +1,76 @@
+@import url(style.scss);
+
+// ---------header
+
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	font-weight: 500;
+	font-family: Montserrat;
+	background: #3D305D;
+}
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {}
+
+.header__container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0px auto;
+	padding: 0 15px;
+	box-sizing: content-box;
+}
+
+.header__logo {
+	color: rgb(0, 151, 245);
+	font-size: 25px;
+	font-weight: 700;
+	text-decoration: none;
+	margin: 0 70% 30px 0
+}
+
+.header__menu {}
+
+.menu {}
+
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu__item {
+	display: flex;
+	margin: 0 0 0 20px;
+}
+
+.menu__item:first-child {
+	margin: 0;
+}
+
+.menu__link {
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.menu__link--active {
+	color: white;
+	background: aquamarine;
+	border: 0;
+	padding: 15px;
+	border-radius: 5px;
+}
