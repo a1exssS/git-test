@@ -35,7 +35,7 @@ h6 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background: url("../img/images/MoGo_bk_01.jpg") center no-repeat;
+	background: url("../img/mogo/MoGo_bk_01.jpg") center no-repeat;
 	background-size: cover;
 }
 
@@ -442,7 +442,7 @@ hr {
 .section--devices {
 	margin-bottom: 40px;
 	padding-bottom: 0;
-	background: url('../img/images/bg2.jpg') center no-repeat;
+	background: url('../img/mogo/bg2.jpg') center no-repeat;
 	background-size: cover;
 }
 
@@ -677,4 +677,102 @@ hr {
 
 .section--ourwork {
 	margin: 150px 0 0 0;
+}
+
+.card__item--grid {
+	margin: 110px 0 0 0;
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+	width: 100%;
+	min-width: 100%
+}
+
+.card__grid--big {
+	display: grid;
+	grid-column: 3/4;
+	grid-row: 1/3;
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%
+}
+
+.card__grid {
+	overflow: hidden;
+}
+
+/* ---------------- */
+
+.card__inner--grid {
+	background-color: #95e1d3;
+	position: relative;
+}
+
+.card__item--grid {
+	width: 380px;
+}
+
+.card__inner--grid:hover .card__image--grid img {
+	opacity: 0.1;
+}
+
+.card__inner--grid:hover .card__text--grid {
+	opacity: 1;
+}
+
+.card__image--grid {
+	background: linear-gradient(to bottom, #f38181, #fce38a);
+	transition: transform 200ms ease;
+}
+
+.card__image--grid img {
+	display: grid;
+	transition: opacity 200ms ease;
+}
+
+.card__text--grid {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	opacity: 0;
+	top: 50%;
+	left: 0;
+	z-index: 2;
+	position: absolute;
+	transform: translate(0, -50%, 0);
+	transition: opacity 200ms ease;
+}
+
+.card__icon--grid {
+	margin: -20px 0 0 0;
+	display: grid;
+	position: absolute;
+	left: 47%;
+	top: -25px;
+}
+
+.card__text--grid-subtitle {
+	font-size: 12px;
+	font-weight: 400;
+	font-style: italic;
+	margin: 20px 0 0 0;
+}
+
+/* section--reviews */
+
+.reviews__icon--active {
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	margin: -40px 0px 0 -30px
+}
+
+/* section--reviews */
+
+.section--reviews {
+	margin: 0px 0 0 0;
 }

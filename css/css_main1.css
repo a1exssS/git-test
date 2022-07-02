@@ -209,6 +209,10 @@ body {
 	font-weight: 600;
 }
 
+.menu__link:visited {
+	color: #585757;
+}
+
 @media (max-width:479px) {
 	.menu__link {
 		font-size: 18px
