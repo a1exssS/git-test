@@ -234,6 +234,8 @@ body {
 
 .page__achievements {}
 
+.page__advice {}
+
 /*-------header-block-----------------------------------*/
 .header-block {
 	text-align: center;
@@ -576,4 +578,78 @@ body {
 	line-height: 150%;
 	color: #737373;
 	letter-spacing: 0.1px;
+}
+
+/* advaices */
+
+.advice {
+	padding: 125px 0 80px 0;
+}
+
+.advice__container {}
+
+.advice__header-block {
+	margin: 0 0 45px 0;
+}
+
+.header-block {
+	margin: -20px 0 0 0;
+}
+
+.header-block__title {}
+
+.header-block__sub-title {}
+
+.advice__body {
+	flex: 1 1 auto;
+	margin: 0 -15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.advice__column {
+	padding: 0px 15px;
+	flex: 0 1 25%;
+}
+
+
+.item-advice {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.advice__items {}
+
+.item-advice__link {
+	color: inherit;
+}
+
+.item-advice__link:hover {
+	text-decoration: underline;
+}
+
+.item-advice__title {
+	font-weight: bold;
+	letter-spacing: 0.1px;
+	font-size: 16px;
+	height: 150%;
+	margin: 0 0 15px 0;
+	padding: 50px 30px 0px 30px;
+}
+
+.item-advice__text {
+	color: #737373;
+	line-height: 142%;
+	margin: 0 0 50px 0;
+	padding: 0 30px 0 25px;
+}
+
+.item-img--link:first-child {
+	margin: -20px 0 0 0;
+}
+
+.item-img {
+	display: contents;
+	margin: 0 0 60% 0;
 }

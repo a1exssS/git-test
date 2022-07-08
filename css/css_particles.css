@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	background: #2C2735;
+	overflow: hidden;
+}
+
+span {
+	position: absolute;
+	background: rgb(0, 166, 255);
+	width: 10px;
+	height: 10px;
+	pointer-events: none;
+	border-radius: 50%;
+}
+
+span::before {
+	content: '';
+	position: absolute;
+	background: rgb(84, 195, 255);
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	animation: moveParticles 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes moveParticles {
+	0% {
+		transform: translate(0);
+	}
+
+	100% {
+		transform: translate(300px);
+	}
+}
+
+.h1 {
+	position: absolute;
+	z-index: 10000;
+	color: aliceblue;
+}
