@@ -320,4 +320,204 @@ document.getElementById('submit2').onclick = function () {
 			document.getElementById('p1').innerHTML = grades + " it's not a gread"
 	}
 }*/
-console.log('asdf')
+
+
+
+
+// lesson 16
+
+/*let deg;
+
+document.getElementById('submitDeg').onclick = function () {
+	let sunnyYes = document.getElementById('true');
+	let sunny = document.getElementById('false');
+	deg = document.getElementById('inpDeg').value;
+	switch (true) {
+		case deg >= -20 && deg <= 0:
+			document.getElementById('p1').innerHTML = "you should wear in warm clothes!"
+			break;
+		case deg == 0 || deg < 10:
+			document.getElementById('p1').innerHTML = "you still should wear in warm clothes"
+			break;
+		case deg >= 10 && deg <= 15:
+			document.getElementById('p1').innerHTML = "you shouldn't wear in warm clothes"
+			break;
+		case deg > 15 && deg < 25:
+			document.getElementById('p1').innerHTML = "it's too warm outside!"
+			break;
+		case deg >= 25 || deg == 100000:
+			document.getElementById('p1').innerHTML = "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			break;
+		default:
+			document.getElementById('p1').innerHTML = deg + " it's not a weather"
+	}
+
+	switch (true) {
+		case sunnyYes.checked:
+			document.getElementById('p2').innerHTML = "you shouldn't take a hat or cap"
+			break;
+		case sunny.checked:
+			document.getElementById('p2').innerHTML = "take a hat or cap "
+			break;
+		default:
+			document.getElementById('p2').innerHTML = "does it sunny outside?"
+	}
+}*/
+
+
+
+
+// lesson 17
+
+
+/*document.getElementById('submitDeg').onclick = function () {
+	let deg = document.getElementById('inpDeg').value;
+	let sunnyYes = document.getElementById('true');
+	let sunny = document.getElementById('false');
+	// со свитчами не раотает
+	// 	switch (true) {
+	// 		case !deg > 0:
+	// 			document.getElementById('p1').innerHTML = "it's frizzing outside!"
+	// 			break;
+	// 		case !deg < 0:
+	// 			document.getElementById('p1').innerHTML = "it's warm outside!"
+	// 			break;
+	// 		default:
+	// 			document.getElementById('p1').innerHTML = "how many??"
+	// 	}
+
+	if (!(deg > 0)) {
+		document.getElementById('p1').innerHTML = "it's frizzing outside!"
+	}
+	else {
+		document.getElementById('p1').innerHTML = "it's warm outside!"
+	}
+
+	if (!(sunnyYes.checked)) {
+		document.getElementById('p2').innerHTML = "take a hat or cap "
+	}
+	else if (!(sunny.checked)) {
+		document.getElementById('p2').innerHTML = "you shouldn't take a hat or cap"
+	}
+	else {
+		document.getElementById('p2').innerHTML = "does it sunny outside?"
+	}
+}*/
+
+
+
+
+// lesson 18
+
+/*let userName;
+
+while (userName == "" || userName == null) {
+	userName = window.prompt('enter your name');
+}
+
+document.getElementById('userName').innerHTML = 'hello ' + userName + ' we glad to see you again!!!'
+*/
+
+
+
+// lesson 19
+
+/*let userName;
+
+do {
+	userName = window.prompt('enter your name');
+} while (userName == "" || userName == null)
+
+document.getElementById('userName').innerHTML = 'hello ' + userName + ' we glad to see you again!!!'
+*/
+
+
+
+// lesson 20
+
+/*document.getElementById('counterBtn').onclick = function () {
+	for (let bomb = document.getElementById('counter').value; bomb > -2; bomb -= 7) {
+		console.log(bomb)
+		document.getElementById('p1').innerHTML = bomb
+	}
+}*/
+
+
+// lesson 21
+/*
+document.getElementById('counterBtn').onclick = function () {
+	let asds = document.getElementById('counter').value
+	asds = Number(asds)
+	for (asds; asds >= 0; asds += 1) {
+		if (asds == 69) {
+			continue;
+		}
+		if (asds == 97) {
+			break;
+		}
+		console.log(asds)
+		document.getElementById('p1').innerHTML = asds
+	}
+}*/
+
+
+
+// lesson 22
+
+/*document.getElementById('submitMyCol').onclick = function () {
+	let symbols = document.getElementById('mySymbol').value;
+
+	for (gay1 = 1; cols = document.getElementById('myColumns').value >= gay1; gay1 += 1) {
+		for (gay2 = 1; rows = document.getElementById('myRows').value >= gay2; gay2 += 1) {
+			document.getElementById('p1').innerHTML += symbols;
+		}
+		document.getElementById('p1').innerHTML += '<br>'
+	}
+}*/
+
+
+// lesson 23
+/*
+document.getElementById('submitInfo').onclick = function hi() {
+	let userName = document.getElementById('userName').value;
+	let userAge = document.getElementById('userAge').value;
+	startProgramm(userName, userAge);
+}
+
+function startProgramm(userName, userAge) {
+	document.getElementById('p1').innerHTML = "Happy birthday to you <br>" +
+		"Happy birthday to you <br>" +
+		"Happy birthday to you " + userName + "<br> You are " + userAge + " years old"
+}*/
+
+
+
+// lesson 24
+
+
+/*document.getElementById('submitToSeeResult').onclick = function () {
+	let width = document.getElementById('width').value;
+	let height = document.getElementById('height').value;
+	area(width, height);
+
+}
+
+function area(width, height) {
+	area = Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2));
+	// area = 2 * Math.PI * width
+	// area = 4 * Math.PI * (Math.pow(width, 2)) другие формулы:)
+	document.getElementById('p1').innerHTML = "your area is " + area
+}*/
+
+
+// lesson 25
+
+/*document.getElementById('seeResult').onclick = function () {
+	let man = document.getElementById('imMan').value;
+	let woman = document.getElementById('imWoman').value;
+	whoAreYou(man, woman);
+}
+
+function whoAreYou(man, woman) {
+	return man == "yes" || woman == "no" ? document.getElementById('p1').innerHTML = "you are great" : man == "no" || woman == "yes" ? document.getElementById('p1').innerHTML = "you are pice of shit" : document.getElementById('p1').innerHTML = "you should select it or write it right you idiot"
+}*/
